@@ -5,7 +5,7 @@
   .weixin_head span{width:47% !important;margin-right: 0.2rem !important}
   .weixin_head span.row{width:100% !important}
   .weixin_head span:not(.row){width:47% !important}
-  .weixin_head{padding-bottom:.3rem;border-bottom:2px solid #e5e5e6}
+  .weixin_head{padding-bottom:.3rem;border-bottom:2px solid #e5e5e6;font-size: @font24;}
   .pageState:before{margin-right: 4px;border-top: 6px solid transparent;border-bottom: 6px solid transparent;border-right: 6px solid #FFF}
   .pageState{position: absolute;right: 15px;bottom: 4px;padding: 2px 8px;line-height: 20px;font-size: 12px;color: #FFF; z-index: 3}
   .section{padding-bottom:1.2rem;padding-top:0 !important}
@@ -46,22 +46,22 @@
 
       <div class="weixin_wrap">
         <div class="weixin_head clearfix">
-          <span>楼层：<i v-text="locat_floor"></i>/<i v-text="floors"></i></span>
-          <span>可否注册：<i v-text="zc"></i></span>
-          <span>层高：<i v-text="fjcg"></i></span>
-          <span>朝向：<i v-text="chx">{{chx}}</i></span>
-          <span>建成年代：<i v-text="kprq"></i></span>
-          <span class="row">产权性质：<i v-text="chqxz"></i></span>
-          <span class="row">物业公司：<i v-text="wygs"></i></span>
-          <span>物业费：<i v-text="wyf"></i></span>
-          <span>供暖费：<i v-text="gnf"></i></span>
-          <span>停车费：<i v-text="tcf"></i></span>
-          <span class="row">网络公司：<i v-text="wlgs"></i></span>
+          <span>楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;层：<i v-text="locat_floor" style="color: #999999;"></i></span>
+          <span>可否注册：<i v-text="zc" style="color: #999999;"></i></span>
+          <span>层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高：<i v-text="fjcg" style="color: #999999;"></i></span>
+          <span>朝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;向：<i v-text="chx" style="color: #999999;">{{chx}}</i></span>
+          <span>建成年代：<i v-text="kprq" style="color: #999999;"></i></span>
+          <span>停&nbsp;&nbsp;车&nbsp;费：<i v-text="tcf" style="color: #999999;"></i></span>
+          <span class="row">产权性质：<i v-text="chqxz" style="color: #999999;"></i></span>
+          <span class="row">物业公司：<i v-text="wygs" style="color: #999999;"></i></span>
+          <span>物&nbsp;&nbsp;业&nbsp;费：<i v-text="wyf" style="color: #999999;"></i></span>
+          <span>供&nbsp;&nbsp;暖&nbsp;费：<i v-text="gnf" style="color: #999999;"></i></span>
+          <span class="row">网络公司：<i v-text="wlgs" style="color: #999999;"></i></span>
         </div>
         <div class="weixin_bot clearfix">
           <div class="fl weixin_bot_box">
-            <span>销售顾问：<i v-text="name"></i></span>
-            <span>联系方式：<a :href="'tel:' + phone"><i class="con_telephone" v-text="phone"></i></a></span>
+            <span>销售顾问：<i v-text="name" style="color: #999999;"></i></span>
+            <span>联系方式：<a :href="'tel:' + phone"><i class="con_telephone" v-text="phone" style="color: #999999;"></i></a></span>
           </div>
         </div>
       </div>
